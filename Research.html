@@ -47,7 +47,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Research interests</h3>
+                    <h3>Primary research interests</h3>
                 </div>
             </div>
             <br>
@@ -55,27 +55,60 @@
                 <div class="col-md-7">
                     <ul>
                         <li><b>Inverse problems</b>
-                            <p class="text-justify">My primary area of interest is in the field of inverse problems in fluid flows and medical imaging.
-                            For inverse problems in fluid flows, I am interested in determining the flow properties like velocity, vorticity, density, given 
-                            image data which is advected by the fluid flow field. I study both the theoretical and computational aspects of such models. 
-                            For inverse problems in medical imaging, I develop numerical algorithms for reconstructing an image in 2D/3D from its Radon tansform
-                            (Circular, Elliptical, Broken ray, Spherical). I focuss mainly on the robustness, accuracy and complexity of such algorithms.</li>
-                        <li><b>Observers for compressible flows</b>
-                            <p class="text-justify">I am working on developing observers for tracking image data advected by compressible flows. Given observations in full/partial spatial
-                            doamin, I am studying the behaviour of the observer system and look at determining decay rates for the convergence of solutions of the observer system to the actual solution.</b>
-                        <li><b>Discontinuous Galerkin (DG) schemes</b>
+                            <p class="text-justify">I work on inverse problems in fluid flows and medical imaging, with primary focus on
+			    cancer detection.
+                            For fluid flows, I am interested in determining the flow properties like velocity, vorticity, density, given 
+                            image data which is advected by the fluid flow field using the method of optical flow. I study both the theoretical and computational aspects of such models. 
+                            In medical imaging, I develop numerical algorithms for reconstructing an image in 2D/3D from its Radon tansform
+                            (Circular, Elliptical, Broken ray, Spherical). I focuss mainly on the robustness, accuracy and complexity of such algorithms.
+			    I am currently working on developing robust inversion algorithms for hybrid imaging modilities like acousto-electric tomography,
+			    current density impedance imaging, optical tomography. The underlying method is a new class of sparsity-based optimization 
+			    framework that uses tools from image processing like anisotropic diffusion to obtain high contrast and high resolution reconstructions.</li>
+			<li> <b> Developing new drugs for disease cure </b>
+			     <p class="text-justify">	
+			     Recently, I have started working on developing new drugs for treatment of diseases like cancer. The 
+			     methodology involved is a novel combination of formulating the dynamics of the disease and the drugs
+			through partial differential equations (Quantitative Systems Pharmacology) and then using an optimal control 
+			inverse problems framework, aided with sensitivity analysis methods to estimate parameters representing drug 
+				     concentration and selecting the best combination of these parameters. </li>
+			
+                        <li><b>PDE optimal control frameworks for stochastic processes</b>
+                            <p class="text-justify">I also work on optimal control problems governed by stochastic processes in the framework of PDEs and 
+			    game theoretic approaches. My goal is to 
+                            develop suitable optimal control framework, look at theoretical existence and uniqueness of optimal controls and Nash equilibrium, 
+			    develop higher order positive schemes
+                            for the forward model and validate the framework using suitable numerical experiments. This research is motivated by numerous applications
+			    arising in traffic control and understanding the behavior of pedestrian flow dynamics. </li>
+                    </ul>
+
+                </div>
+                
+            </div>
+        </div>
+	<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Other research interests</h3>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-7">
+                    <ul>
+                            <li><b>Discontinuous Galerkin (DG) schemes</b>
                             <p class="text-justify">I am interested in developing DG schemes for 2D/3D incompressible flows. I study theoretical properties like stability, 
                             error estimates of the DG scheme and validate it numerically using FEM packages like FENICS, DEAL.II, COMSOL with the aid of visual plotting softwares 
                             like PARAVIEW, GMSH, VISIT</li>
-                        <li><b>PDE optimal control frameworks for stochastic processes</b>
-                            <p class="text-justify">I am also working on optimal control of motion governed by stochastic processes in the framework of PDE's. My goal is to 
-                            develop suitable optimal control framework, look at theoretical existence and uniqueness of such optimal controls, develop higher order positive schemes
-                            for the forward model and validate the framework using suitable numerical experiments. </b>
                         <li><b>Shape optimization</b>
-                            <p class="text-justify">I am also involved in determining the best shape among a class of punctured non-concentric domains so as to minimize the 
+                            <p class="text-justify">I also work on determining the best shape among a class of punctured non-concentric domains so as to minimize the 
                             first Dirichlet eigenvalue. Such problems are of great interest in determining the shape of musical instruments or even in placement of obstacles. 
                             I use both theoretical as well as numerical methods for solving such problems.
                         </li>
+			    <li> <b>Non-linear optimization methods for statistical cure rate models</b>  
+			    <p class="text-justify">	    
+			    I am working on using advanced non-linear optimization techniques for simultaneous maximization of parameters in cure rate models. 
+			    The resultant methods are computationally, very accurate and less expensive than the previous proposed optimization algorithms for 
+			    for cure rate models.</li>
                     </ul>
 
                 </div>
