@@ -126,11 +126,14 @@
                     
     <br>
  
-<footer> <p>Last modified: <span id="demo"></span>.</p>
+<footer> <p>Last modified:</p>
+<p id="demo"></p>
 
 <script>
-document.getElementById("demo").innerHTML = document.lastModified;
-</script> &copy; 2015-2016 Souvik Roy </footer>
+const date = new Date(document.lastModified);
+document.getElementById("demo").innerHTML = date;
+</script>
+ &copy; 2015-2016 Souvik Roy </footer>
      
      
 </body>
