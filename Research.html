@@ -37,7 +37,7 @@
             flex-wrap: wrap;
             padding: 50px;
         }
-        .circle, .oval {
+        /*.circle, .oval {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,6 +55,20 @@
             background-color: #FF5722;
             text-wrap: wrap;
         }*/
+
+        div.box {
+        --s:450px;  /*Size of the circle */
+        --p:15px;   /* padding */
+
+        height: var(--s);
+        width: var(--s);
+        border-radius: 50%;
+        background: #333;
+        color:#fff;
+        margin:30px auto;
+        font-size:20px;
+        text-align:justify;
+}
 
         .circle i,
         .circle::before {
