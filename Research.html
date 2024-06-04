@@ -30,67 +30,6 @@
         display: table;
         clear: both;
     }
-    .shape-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 50px;
-        }
-        /*.circle, .oval {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            font-size: 0.8em;
-        }
-        /*.circle {
-             width: 450px%; height: 450px;
-            float: left;
-            margin-right:2rem; 
-            border-radius: 50%;
-            -webkit-shape-outside:circle();
-            shape-outside:circle();
-            background-color: #FF5722;
-            text-wrap: wrap;
-        }*/
-
-        div.box {
-        --s:450px;  /*Size of the circle */
-        --p:15px;   /* padding */
-
-        height: var(--s);
-        width: var(--s);
-        border-radius: 50%;
-        background: #333;
-        color:#fff;
-        margin:30px auto;
-        font-size:20px;
-        text-align:justify;
-}
-
-        .circle i,
-        .circle::before {
-            content: '';
-            float: left;
-            height:100%;
-            width: 50%;
-            background-color: #FF5722;
-        shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
-        }
-
-        .circle i {
-            float: right;
-        shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
-        background-color: #FF5722;
-        }
-        .oval {
-            width: 200px;
-            height: 100px;
-            border-radius: 50% / 25%;
-            background-color: #2196F3;
-        }
 </style>
 
             </head>
@@ -141,7 +80,7 @@
 
 	<div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <h3>This page contains</h3>
                     <ul>
                     <li>Primary research interests</li>
@@ -155,19 +94,15 @@
         <br>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <h3>Primary research interests</h3>
                 </div>
             </div>
             <br>
-           <!-- <div class="container shape-container"> -->
-                
-                    <div class="col-sm-12">
-                        <div class="circle">
-                       
-                        
-                         <ul>   
-                        <b>Inverse problems in medical imaging and fluid flows</b>
+            <div class="text-box">
+                <div class="col-md-7">
+                    <ul>
+                        <li><b>Inverse problems in medical imaging and fluid flows</b>
                             
                             <p class="text-justify">
                             In medical imaging, I develop numerical algorithms for reconstructing an image in 2D/3D from its Radon transform (Circular, Elliptical, Spherical, Broken Ray or V-Line). I focus mainly on the robustness, accuracy and complexity of such algorithms.
@@ -180,37 +115,20 @@
                              <p class="text-justify">I am working on inverse problems in fluid flows and medical imaging, with primary focus on cancer detection.
                             For fluid flows, I am interested in determining the flow properties like velocity, vorticity, density, given 
                             image data which is advected by the fluid flow field using the method of optical flow. I study the theoretical properties of such models, and devise compuational algorithms for efficient implementation using finite element methods like Discontinuous Galerkin. 
-                         </ul>
-                        </div> 
-                    </div>
-
-                        <div class="col-sm-6">
-                            <div class="circle">
-                            <ul>
+                         </li>
 			
-                             <b> Stochastic frameworks for disease dynamics and treatment evaluation </b>
-			                 <p class="text-justify">	
-			             I am working on developing new stochastic frameworks in the realm of Fokker-Planck (FP) and Liouville equations for representing the dynamics of diseases like cancer, chronic and infectious diseases, and controlling them with treatments. The methodology involved is a novel combination of formulating the dynamics of the disease and the drugs through FP and Liouville partial differential equations (Quantitative Systems Pharmacology) and then using an optimal control inverse problems framework, aided with sensitivity analysis methods, to estimate parameters representing drug concentration and selecting the best combination of these parameters. 
-                     </ul>
-                         </div> 
-                    </div>
-
-                    <div class="col-sm-6">
-                            <div class="circle">
-                            <ul>
+                        <li> <b> Stochastic frameworks for disease dynamics and treatment evaluation </b>
+			             <p class="text-justify">	
+			             I am working on developing new stochastic frameworks in the realm of Fokker-Planck (FP) and Liouville equations for representing the dynamics of diseases like cancer, chronic and infectious diseases, and controlling them with treatments. The methodology involved is a novel combination of formulating the dynamics of the disease and the drugs through FP and Liouville partial differential equations (Quantitative Systems Pharmacology) and then using an optimal control inverse problems framework, aided with sensitivity analysis methods, to estimate parameters representing drug concentration and selecting the best combination of these parameters. </li>
 			
-                        <b>PDE optimal control frameworks for stochastic processes</b>
+                        <li><b>PDE optimal control frameworks for stochastic processes</b>
                             <p class="text-justify">I also work on optimal control problems governed by stochastic processes in the framework of PDEs and game theoretic approaches. My goal is to develop suitable optimal control framework, look at theoretical existence and uniqueness of optimal controls and Nash equilibrium, 
-			                develop higher order positive schemesfor the forward model and validate the framework using suitable numerical experiments. This research is motivated by numerous applications arising in traffic control and understanding the behavior of pedestrian flow dynamics. 
-                        </ul>
-                            </div> 
-                    </div>
-                    
-                
+			                develop higher order positive schemesfor the forward model and validate the framework using suitable numerical experiments. This research is motivated by numerous applications arising in traffic control and understanding the behavior of pedestrian flow dynamics. </li>
+                    </ul>
 
+                </div>
                 
-                
-            
+            </div>
         </div>
 	<div class="container">
             <div class="row">
