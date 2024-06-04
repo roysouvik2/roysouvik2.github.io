@@ -1,173 +1,147 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <title>Souvik Roy's Homepage</title>
-
-<style>
-    .text-box {
-        border: 2px solid #000;
-        padding: 20px;
-        width: 500px;
-        margin: 0 auto; /* Centers the box horizontally */
-        background-color: bisque;
-    }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 30px; /* Add padding to create space */
-    }
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-</style>
-
-            </head>
-    
-    
+    <title>Souvik Roy's Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <style>
+        .header {
+            position: relative;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white;
+            border-radius: 100% / 20px;
+        }
+        .diagonal-box {
+            position: relative;
+            background-color: #2196F3;
+            color: white;
+            padding: 50px;
+            margin: 20px 0;
+            transform: skewY(-10deg);
+        }
+        .diagonal-box h2, .diagonal-box p {
+            transform: skewY(10deg);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+        }
+        .circle {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            border-radius: 50%;
+            background-color: #FF5722;
+            text-align: center;
+            margin-top: -100px; /* Pull up into the footer area */
+        }
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .text-box {
+            border: 2px solid #000;
+            padding: 20px;
+            width: 100%;
+            background-color: bisque;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 30px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Souvik Roy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Research Interests <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="Publications.html">Publications/Preprints</a></li>
+                <li class="nav-item"><a class="nav-link" href="Conference.html">Conferences and Talks</a></li>
+                <li class="nav-item"><a class="nav-link" href="Grants.html">Grants and Awards</a></li>
+                <li class="nav-item"><a class="nav-link" href="Teaching.html">Students and Teaching</a></li>
+                <li class="nav-item"><a class="nav-link" href="Codes.html">Codes</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="CV.html">CV</a>
-             </li>
-             <li class="nav-item active">
-                <a class="nav-link" href="#">Research Interests <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="Publications.html">Publications/Preprints</a>
-             </li>
-             
-             <li class="nav-item">
-                <a class="nav-link" href="Conference.html">Conferences and Talks</a>
-            </li>
-                <a class="nav-link" href="Grants.html">Grants and Awards</a>
-             </li>
-             
-             <li class="nav-item">
-                <a class="nav-link" href="Teaching.html">Students and Teaching</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="Codes.html">Codes</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="Contact.html">Contact</a>
-             </li>
+    <header class="header">
+        <h1>Welcome to My Shape-Based Website</h1>
+    </header>
 
-        </ul>
-    </div>
-</nav>
-
-	<div class="container">
+    <div class="container">
+        <div class="content">
             <div class="row">
                 <div class="col-md-12">
                     <h3>This page contains</h3>
                     <ul>
-                    <li>Primary research interests</li>
-		    <li>Other research interests</li>
+                        <li>Primary research interests</li>
+                        <li>Other research interests</li>
                     </ul>
                 </div>
-            </div>
-	</div>
-
-	<br> 
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Primary research interests</h3>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-7">
-                    <ul>
-                        <li><b>Inverse problems in medical imaging and fluid flows</b>
-                            
-                            <p class="text-justify">
-                            In medical imaging, I develop numerical algorithms for reconstructing an image in 2D/3D from its Radon transform (Circular, Elliptical, Spherical, Broken Ray or V-Line). I focus mainly on the robustness, accuracy and complexity of such algorithms.
-			                 I am currently working on developing robust inversion algorithms for hybrid imaging modilities like acousto-electric tomography,
-			                 current density impedance imaging, optical tomography. The underlying method is a new class of sparsity-based optimization 
-			                 framework that uses tools from image processing like anisotropic diffusion to obtain high contrast and high resolution reconstructions.
-
-                             <br> 
-
-                             <p class="text-justify">I am working on inverse problems in fluid flows and medical imaging, with primary focus on cancer detection.
-                            For fluid flows, I am interested in determining the flow properties like velocity, vorticity, density, given 
-                            image data which is advected by the fluid flow field using the method of optical flow. I study the theoretical properties of such models, and devise compuational algorithms for efficient implementation using finite element methods like Discontinuous Galerkin. 
-                         </li>
-			
-                        <li> <b> Stochastic frameworks for disease dynamics and treatment evaluation </b>
-			             <p class="text-justify">	
-			             I am working on developing new stochastic frameworks in the realm of Fokker-Planck (FP) and Liouville equations for representing the dynamics of diseases like cancer, chronic and infectious diseases, and controlling them with treatments. The methodology involved is a novel combination of formulating the dynamics of the disease and the drugs through FP and Liouville partial differential equations (Quantitative Systems Pharmacology) and then using an optimal control inverse problems framework, aided with sensitivity analysis methods, to estimate parameters representing drug concentration and selecting the best combination of these parameters. </li>
-			
-                        <li><b>PDE optimal control frameworks for stochastic processes</b>
-                            <p class="text-justify">I also work on optimal control problems governed by stochastic processes in the framework of PDEs and game theoretic approaches. My goal is to develop suitable optimal control framework, look at theoretical existence and uniqueness of optimal controls and Nash equilibrium, 
-			                develop higher order positive schemesfor the forward model and validate the framework using suitable numerical experiments. This research is motivated by numerous applications arising in traffic control and understanding the behavior of pedestrian flow dynamics. </li>
-                    </ul>
-
-                </div>
-                
             </div>
         </div>
-	<div class="container">
+
+        <div class="diagonal-box">
+            <h2>Primary Research Interests</h2>
+            <p>This section describes the primary research interests with detailed explanations.</p>
+        </div>
+
+        <div class="content">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Other research interests</h3>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-7">
+                    <h3>Other Research Interests</h3>
                     <ul>
-                        <li><b>Development of new signal processing techniques in analytical chemistry</b>
-                            <p class="text-justify">I have been working on developing robust computational algorithms for processing signals and chromatograms in high-performance liquid chromatography (HPLC).  In particular, I have worked on formulating the geometric characteristics of capillaries, in HPLC, which involved a new definition of a quantitative index for the concentricity of the capillary bore, with new mathematical formulae for various capillary diameter measurement methods. Using analytical and experimental methods, we showed that chromatographic performance is dependent only on the mean diameter of the capillary and not on its variance. I  am also working on the development of robust algorithms for artifact-free deconvolved chromatogram reconstructions in HPLC and signal reconstructions in gas chromatography microwave rotational resonance spectrometry (GC-MRR), a novel instrumentation to separate and “fingerprint” molecules which was developed in 2020-2021. These works are important because as separation columns in HPLC become more efficient with the evolution of column technology and separations become faster, removing extra-column effects is increasingly challenging. Moreover, GC-MRR suffers from low analytical sensitivity and signal processing issues since a large amount of data and Fourier transformations (FT) are needed to construct chromatograms. Thus, an unmet need exists to develop robust and fast algorithms to construct chromatograms without using FT. For this purpose, a novel combination of instrument response modeling, using a combination of noise-free generalized asymmetric normal function, regularized deconvolution method and anisotropic diffusion method, is being used to develop reconstruction algorithms, which will result in transforming chromatograms arising in HPLC to equivalent optimized chromatograms in ultra-high-performance liquid chromatography (UHPLC). Furthermore, these algorithms are expected to be of commercial interest to instrument manufacturers globally to advance the use of microbore columns for green chemistry, miniaturized columns, and microfluidic instrument development.</li>
-
-                            <li><b>Non-standard finite difference (NSFD) methods</b>
-                            <p class="text-justify">I am working on developing and analyzing NSFD methods for ODEs and PDEs, with high-order accuracy and positivity. Our methods are based on the general theta-based finite difference schemes and are explicit, second-order accurate, positive, applicable for stiff and non-stiff differential equations, and can be used with any time-stepping (or elementary stable). Several numerical simulations with ODEs have demonstrated that NSFD methods have a significant advantage over traditional finite difference methods that do not, simultaneously, satisfy all the aforementioned properties.</li>
-                                <li> <b>Non-linear optimization methods for statistical cure rate models</b>  
-                             <p class="text-justify">       
-                             I am working on developing advanced non-linear optimization algorithms for simultaneous maximization of parameters in cure rate models. Our optimization algorithms are based on NCG methods that result in fast and accurate parameter estimations compared to existing algorithms in cure rate models since they are based on either Newton-based optimization algorithms involving second derivatives, or expectation maximization algorithms using a profile-likelihood approach that result in a very slow and inaccurate estimation of parameters.</li>
-
-
-                            <li><b>Higher-order finite volume and finite element schemes</b>
-                            <p class="text-justify">I am interested in developing higher-order finite volume (FV) and finite element (FEM) schemes for 2D/3D flows. I study theoretical properties like stability, 
-                            error estimates of the schemes and validate it numerically using packages like FENICS, DEAL.II, COMSOL with the aid of visual plotting softwares like PARAVIEW, GMSH, VISIT</li>
-                        <li><b>Shape optimization</b>
-                            <p class="text-justify">I also work on shape optimization problems, where a class of domains given by a disk minus a non-concentric even order polygon are considered to determine the optimum domain among this class for the first eigenvalue of the Laplacian and general divergence free elliptic operators. Such problems are of great interest in determining the shape of musical instruments or even in placement of obstacles. I use both theoretical as well as numerical methods based on finite element methods for solving such problems.
-                        </li>
-			         
+                        <li>Development of new signal processing techniques in analytical chemistry</li>
+                        <li>Non-standard finite difference methods</li>
+                        <li>Non-linear optimization methods for statistical cure rate models</li>
+                        <li>Higher-order finite volume and finite element schemes</li>
+                        <li>Shape optimization</li>
                     </ul>
-
                 </div>
-                
             </div>
         </div>
-        
-        
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        
-        
-    </body>
+    </div>
+
+    <footer class="footer">
+        <div class="circle">
+            <p>Footer with a Circular Shape</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
 </html>
